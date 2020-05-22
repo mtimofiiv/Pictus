@@ -5,9 +5,8 @@ import Feature from "../templates/feature"
 const IndexPage = ({
   data
 }) => {
-  console.log(data)
   const { allMarkdownRemark: markDown } = data
-  console.log(markDown.edges)
+
   const Features = markDown.edges
     .map(edge => <Feature key={edge.title} feature={edge} />)
 
@@ -18,7 +17,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(features)/.*.md$/"}}) {
       edges {
         node {
           html
