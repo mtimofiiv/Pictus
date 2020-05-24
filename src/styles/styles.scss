@@ -1,0 +1,20 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-spacer {
+  flex-grow: 1;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+  .navbar-options {
+    .navbar-option {
+      display: inline-block;
+    }
+  }
+}

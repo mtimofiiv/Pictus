@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Feature from "../templates/feature"
+import Header from '../templates/header'
 
 const IndexPage = ({
   data
@@ -10,7 +11,12 @@ const IndexPage = ({
   const Features = markDown.edges
     .map(edge => <Feature key={edge.title} feature={edge} />)
 
-  return <div>{Features}</div>
+  return (
+    <div>
+      <Header/>
+      <div>{Features}</div>
+    </div>
+  )
 }
 
 export default IndexPage
