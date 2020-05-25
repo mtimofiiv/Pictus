@@ -1,7 +1,31 @@
+$getsmart-branding-color: #021FDB;
+$getsmart-secondary-color: #405aff;
+$getsmart-tertiary-color: #01a7df;
+
+$background-color: #F8F8F8;
+$white: #FFFFFF;
+
+// Primary
+$black: #1B1B1B;
+$standard-font-color: #1B1B1B;
+$grey-400: #5A5A5A; // Used for grey writing
+$grey-300: #BEBEBE;
+$grey-200: #E8E6E6; // Used for element borders
+$grey-100: #F8F8F8; // Used for backgrounds
+
+// Other
+$box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+$large-element-shadow: 0px 2px 12px 2px rgba(180,180,180,0.15);
+$soft-element-shadow: 0 4px 20px rgba(0,0,0,0.035);
+$blue-box-shadow: 0 0 3px 2px rgba(1, 167, 223, 0.7);
 
 body {
   margin: 0;
   padding: 0;
+  background-color: $background-color;
+}
+p {
+  margin: 0;
 }
 
 .flex-spacer {
@@ -9,6 +33,7 @@ body {
 }
 
 .container {
+  background-color: $background-color;
   max-width: 800px;
   padding: 0 20px;
   margin: auto;
@@ -49,17 +74,19 @@ body {
 
 .feature-container {
   .feature-post {
-    margin: 60px;
+    margin: 90px 15px;
     .feature-text {
-      width: 60%;
+      width: calc(60% - 40px);
       display: inline-block;
       vertical-align: top;
+      padding: 0 20px;
       .feature-title {
         font-size: 28px;
         font-weight: 600;
       }
       .feature-description {
         font-size: 18px;
+        line-height: 26px;
       }
     }
     .feature-image {
@@ -67,7 +94,84 @@ body {
       display: inline-block;
       img {
         max-width: 100%;
+        box-shadow: $soft-element-shadow;
       }
+    }
+  }
+}
+
+.attribute-post {
+  border: 1px solid $grey-200;
+  background-color: white;
+  width: 26%;
+  vertical-align: top;
+  display: inline-block;
+  margin: 1%;
+  padding: 20px;
+  box-shadow: $soft-element-shadow;
+  border-radius: 12px;
+  .attribute-text {
+    vertical-align: top;
+    .attribute-title {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .attribute-description {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  .attribute-image {
+    width: 36px;
+    margin-bottom: 24px;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.section-header {
+  margin: 90px auto 45px auto;
+  font-size: 36px;
+  display: inline-block;
+  text-align: center;
+  .section-header-underline {
+    margin-top: 20px;
+    border-bottom: 3px solid $getsmart-branding-color;
+    width: 115%;
+  }
+}
+
+.testimonial-post {
+  width: 48%;
+  vertical-align: top;
+  display: inline-block;
+  margin: 1%;
+  padding: 20px;
+  .testimonial-text {
+    position: relative;
+    .testimonial-author {
+      vertical-align: top;
+      position: absolute;
+      right: 0px;
+      display: inline-block;
+      .testimonial-company,
+      .testimonial-person {
+        font-size: 16px;
+        line-height: 22px;
+        color: $grey-400;
+      }
+    }
+    .testimonial-description {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+  }
+  .testimonial-image {
+    width: 120px;
+    margin: 80px auto 0 auto;
+    img {
+      max-width: 100%;
     }
   }
 }
