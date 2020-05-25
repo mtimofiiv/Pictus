@@ -4,7 +4,12 @@ export default function Template({ feature }) {
   return (
     <div className="feature-container">
       <div className="feature-post">
-        <h1>{feature.node.frontmatter.title}</h1>
+        <div>{feature.node.frontmatter.title}</div>
+        <div
+            dangerouslySetInnerHTML={{
+              __html: feature.node.html
+            }}
+          />
       </div>
     </div>
   )

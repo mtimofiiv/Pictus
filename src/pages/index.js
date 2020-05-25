@@ -2,20 +2,25 @@ import React from "react"
 import { graphql } from "gatsby"
 import Feature from "../templates/feature"
 import Header from '../templates/header'
+import Layout from '../templates/layout'
 
 const IndexPage = ({
   data
 }) => {
-  const { allMarkdownRemark: markDown } = data
+  const { features, mainBlock } = data
+  console.log(data)
 
-  const Features = markDown.edges
-    .map(edge => <Feature key={edge.title} feature={edge} />)
+  const Features = features.edges
+    .map(edge => <Feature key={edge.node.frontmatter.title} feature={edge} />)
 
   return (
-    <div>
-      <Header/>
+    <Layout>
+      <div className="intro-block">
+        <div className="intro-header">{mainBlock.frontmatter.title}</div>
+        <div className="intro-subtext">{mainBlock.frontmatter.subtext}</div>
+      </div>
       <div>{Features}</div>
-    </div>
+    </Layout>
   )
 }
 
@@ -23,7 +28,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(features)/.*.md$/"}}) {
+    features: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(features)/.*.md$/"}}) {
       edges {
         node {
           html
@@ -33,6 +38,15 @@ export const pageQuery = graphql`
           }
         }
       }
+    },
+    mainBlock: markdownRemark(frontmatter: {id: {eq: "MainBlock"}}) {
+      frontmatter {
+        id
+        image
+        subtext
+        title
+      }
+      html
     }
   }
 `

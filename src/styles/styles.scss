@@ -8,13 +8,24 @@ body {
   flex-grow: 1;
 }
 
+.container {
+  max-width: 800px;
+  padding: 0 20px;
+  margin: auto;
+}
+
 .navbar-container {
   display: flex;
   flex-direction: row;
-  background-color: red;
+  padding: 15px 0;
   .navbar-options {
-    .navbar-option {
-      display: inline-block;
-    }
+  }
+  .navbar-option,
+  .navbar-action {
+    line-height: 42px;
+    display: inline-block;
+  }
+  .navbar-option {
+    margin-right: 24px;
   }
 }

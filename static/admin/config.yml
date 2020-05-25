@@ -11,6 +11,7 @@ collections:
     folder: src/data/blocks
     create: true
     fields:
+      - { name: id, label: Id }
       - { name: title, label: Title }
       - { name: subtext, label: Subtext }
       - { name: body, label: Body, widget: markdown }

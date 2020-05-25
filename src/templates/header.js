@@ -1,8 +1,8 @@
 import React from "react"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 import { graphql } from "gatsby"
 
-export default (props) => {
+const Header = (props) => {
   console.log(props)
   return (
     <div className="navbar-container">
@@ -22,9 +22,11 @@ export default (props) => {
   )
 }
 
+export default Header
+
 export const query = graphql`
   query {
-    file(relativePath: { eq: "logo.png" }) {
+    logo: file(relativePath: { eq: "logo.png" }) {
       childImageSharp {
         fixed(width: 125, height: 125) {
           ...GatsbyImageSharpFixed
