@@ -8,7 +8,6 @@ const IndexPage = ({
   data
 }) => {
   const { features, mainBlock } = data
-  console.log(data)
 
   const Features = features.edges
     .map(edge => <Feature key={edge.node.frontmatter.title} feature={edge} />)
@@ -16,8 +15,13 @@ const IndexPage = ({
   return (
     <Layout>
       <div className="intro-block">
-        <div className="intro-header">{mainBlock.frontmatter.title}</div>
-        <div className="intro-subtext">{mainBlock.frontmatter.subtext}</div>
+        <div className="intro-text">
+          <div className="intro-header">{mainBlock.frontmatter.title}</div>
+          <div className="intro-subtext">{mainBlock.frontmatter.subtext}</div>
+        </div>
+        <div className="intro-image">
+
+        </div>
       </div>
       <div>{Features}</div>
     </Layout>

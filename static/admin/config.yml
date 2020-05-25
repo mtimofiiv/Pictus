@@ -14,19 +14,27 @@ collections:
       - { name: id, label: Id }
       - { name: title, label: Title }
       - { name: subtext, label: Subtext }
-      - { name: body, label: Body, widget: markdown }
+      - { name: body, label: Body, widget: text }
   - name: testimonial
     label: Testimonial
     folder: src/data/testimonials
     create: true
     fields:
       - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { name: body, label: Body, widget: text }
   - name: feature
     label: Feature
     folder: src/data/features
     create: true
     fields:
       - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { name: body, label: Body, widget: text }
+      - { name: image, label: Image, widget: image }
+  - name: attribute
+    label: Attribute
+    folder: src/data/attributes
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: text }
       - { name: image, label: Image, widget: image }

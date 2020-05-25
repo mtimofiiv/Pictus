@@ -29,3 +29,45 @@ body {
     margin-right: 24px;
   }
 }
+
+.intro-block {
+  margin: 60px 0 120px 0;
+  .intro-text {
+    width: 70%;
+    .intro-header {
+      font-size: 46px;
+      line-height: 52px;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+    .intro-subtext {
+      font-size: 26px;
+      line-height: 36px;
+    }
+  }
+}
+
+.feature-container {
+  .feature-post {
+    margin: 60px;
+    .feature-text {
+      width: 60%;
+      display: inline-block;
+      vertical-align: top;
+      .feature-title {
+        font-size: 28px;
+        font-weight: 600;
+      }
+      .feature-description {
+        font-size: 18px;
+      }
+    }
+    .feature-image {
+      width: 40%;
+      display: inline-block;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
