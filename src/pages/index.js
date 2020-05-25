@@ -12,7 +12,7 @@ const IndexPage = ({
   const { features, mainBlock, attributes, testimonials } = data
 
   const Features = features.edges
-    .map(edge => <Feature key={edge.node.frontmatter.title} feature={edge} />)
+    .map((edge, index) => <Feature key={edge.node.frontmatter.title} feature={edge} even={index%2 === 0} />)
   const Attributes = attributes.edges
     .map(edge => <Attribute key={edge.node.frontmatter.title} attribute={edge} />)
   const Testimonials = testimonials.edges
@@ -30,13 +30,13 @@ const IndexPage = ({
       </div>
 
       <div className="section-header">
-        A Wide Variety of Modules
+        Tools for your Whole Process
         <div className="section-header-underline"/>
       </div>
       <div>{Features}</div>
 
       <div className="section-header">
-        A Secure, Modular, Easy to Use Solution
+        What Makes us Different?
         <div className="section-header-underline"/>
       </div>
       <div>{Attributes}</div>
