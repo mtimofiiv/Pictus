@@ -7,7 +7,7 @@ const Header = ({ logo }) => {
       <div className="logo-container">
         <img
           className="navbar-logo"
-          height={70}
+          height={50}
           src={logo.frontmatter.image}
           alt={logo.frontmatter.id}/>
       </div>
