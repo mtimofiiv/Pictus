@@ -1,10 +1,16 @@
 import React from "react"
-import { graphql } from "gatsby"
 
-const Footer = (props) => {
+const Footer = ({ logo }) => {
   return (
     <div className="footer-container">
       <div className="container">
+        <div className="logo-wrapper">
+          <img
+            className="navbar-logo"
+            height={70}
+            src={logo.frontmatter.image}
+            alt={logo.frontmatter.id}/>
+        </div>
         <div className="flex-spacer"/>
         <div className="footer-options">
           <div className="footer-header">Pages</div>

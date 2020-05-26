@@ -1,51 +1,54 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Feature from "../templates/feature"
-import Header from '../templates/header'
 import Layout from '../templates/layout'
 import Attribute from "../templates/attribute"
 import Testimonial from "../templates/testimonial"
+import Fade from 'react-reveal/Fade';
 
 const IndexPage = ({
   data
 }) => {
-  const { features, mainBlock, attributes, testimonials } = data
+  const { features, mainBlock, attributes, testimonials, header } = data
 
   const Features = features.edges
     .map((edge, index) => <Feature key={edge.node.frontmatter.title} feature={edge} even={index%2 === 0} />)
   const Attributes = attributes.edges
     .map(edge => <Attribute key={edge.node.frontmatter.title} attribute={edge} />)
   const Testimonials = testimonials.edges
-    .map(edge => <Testimonial key={edge.node.frontmatter.title} testimonial={edge} />)
+    .map(edge => <Testimonial key={edge.node.frontmatter.company} testimonial={edge} />)
 
   return (
-    <Layout>
+    <Layout header={header}>
       <div className="intro-block">
         <div className="intro-text">
-          <div className="intro-header">{mainBlock.frontmatter.title}</div>
+          <h2 className="intro-header">{mainBlock.frontmatter.title}</h2>
           <div className="intro-subtext">{mainBlock.frontmatter.subtext}</div>
         </div>
-        <div className="intro-image">
-        </div>
+        <div className="small-line"/>
       </div>
 
-      <div className="section-header">
+      <h2 className="section-header">
         Tools for your Whole Process
         <div className="section-header-underline"/>
-      </div>
+      </h2>
       <div>{Features}</div>
 
-      <div className="section-header">
+      <h2 className="section-header">
         What Makes us Different?
         <div className="section-header-underline"/>
-      </div>
-      <div>{Attributes}</div>
+      </h2>
+      <Fade>
+        <div>{Attributes}</div>
+      </Fade>
 
-      <div className="section-header">
-        Companies that love us
+      <h2 className="section-header">
+        Users that Love us
         <div className="section-header-underline"/>
-      </div>
-      <div>{Testimonials}</div>
+      </h2>
+      <Fade>
+        <div>{Testimonials}</div>
+      </Fade>
     </Layout>
   )
 }
@@ -94,6 +97,13 @@ export const pageQuery = graphql`
         image
         subtext
         title
+      }
+      html
+    },
+    header: markdownRemark(frontmatter: {id: {eq: "Logo"}}) {
+      frontmatter {
+        id
+        image
       }
       html
     }

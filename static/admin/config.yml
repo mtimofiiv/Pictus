@@ -15,6 +15,7 @@ collections:
       - { name: title, label: Title }
       - { name: subtext, label: Subtext }
       - { name: body, label: Body, widget: text }
+      - { name: image, label: Image, widget: image }
   - name: testimonial
     label: Testimonial
     folder: src/data/testimonials

@@ -32,6 +32,26 @@ p {
   flex-grow: 1;
 }
 
+.small-line {
+  margin-top: 24px;
+  width: 120px;
+  border: 3px solid $getsmart-branding-color;
+}
+
+.action-btn {
+  background-color: $getsmart-branding-color;
+  padding: 8px 16px;
+  color: white;
+  border: 2px solid $getsmart-branding-color;
+  border-radius: 8px;
+  &:hover {
+    background-color: white;
+    padding: 8px 16px;
+    color: $getsmart-branding-color;
+    cursor: pointer;
+  }
+}
+
 .container {
   background-color: $background-color;
   max-width: 1200px;
@@ -43,27 +63,42 @@ p {
   display: flex;
   flex-direction: row;
   padding: 15px 0;
-  .navbar-options {
+  .navbar-logo {
+    margin-right: 42px;
+  }
+  .navbar-options,
+  .navbar-actions {
+    margin-top: 20px;
   }
   .navbar-option,
   .navbar-action {
-    line-height: 60px;
     display: inline-block;
     font-weight: 600;
+    font-size: 22px;
+    padding-top: 8px;
   }
   .navbar-option {
-    margin-right: 36px;
+    margin-right: 42px;
   }
 }
 
 .footer-container {
-  margin-top: 120px;
+  margin-top: 200px;
   position: absolute;
   left: 0px;
   width: 100vw;
   max-width: 100%;
   background-color: $standard-font-color;
-  padding: 60px 0;
+  padding: 100px 0;
+  .logo-wrapper {
+    background-color: white;
+    align-self: flex-start;
+    padding: 8px 16px;
+    border-radius: 10px;
+    img {
+      margin-bottom: 0px;
+    }
+  }
   .container {
     color: white;
     background-color: $standard-font-color;
@@ -72,35 +107,33 @@ p {
     .footer-options {
       display: inline-block;
       padding: 0 60px;
-      &:last-of-type {
-        padding: 0 0 0 60px;
-      }
       .footer-header {
         margin-bottom: 12px;
         font-weight: 600;
-        font-size: 22px;
+        font-size: 26px;
+        line-height: 46px;
       }
-      .footer-header,
       .footer-option {
-        line-height: 42px;
+        font-size: 22px;
+        line-height: 46px;
       }
     }
   }
 }
 
 .intro-block {
-  margin: 80px 0 120px 0;
+  margin: 120px 0 160px 0;
   .intro-text {
-    width: 70%;
+    width: 80%;
     .intro-header {
-      font-size: 46px;
-      line-height: 58px;
+      font-size: 72px;
+      line-height: 92px;
       margin-bottom: 24px;
       font-weight: 600;
     }
     .intro-subtext {
-      font-size: 28px;
-      line-height: 40px;
+      font-size: 30px;
+      line-height: 48px;
     }
   }
 }
@@ -109,19 +142,19 @@ p {
   .feature-post {
     margin: 90px 15px;
     .feature-text {
-      margin-top: 60px;
+      margin-top: 20px;
       width: calc(60% - 40px);
       display: inline-block;
       vertical-align: top;
       padding: 0 40px;
       .feature-title {
-        font-size: 34px;
+        font-size: 36px;
         font-weight: 600;
         margin-bottom: 12px;
       }
       .feature-description {
-        font-size: 22px;
-        line-height: 36px;
+        font-size: 24px;
+        line-height: 42px;
       }
     }
     .feature-image {
@@ -130,8 +163,10 @@ p {
       display: inline-block;
       img {
         max-width: 100%;
-        box-shadow: $soft-element-shadow;
       }
+    }
+    &:first-of-type {
+      margin: 0 15px 90px 15px;
     }
   }
 }
@@ -154,8 +189,8 @@ p {
       margin-bottom: 6px;
     }
     .attribute-description {
-      font-size: 16px;
-      line-height: 22px;
+      font-size: 20px;
+      line-height: 28px;
     }
   }
   .attribute-image {
@@ -175,8 +210,8 @@ p {
 }
 
 .section-header {
-  margin: 90px auto 45px auto;
-  font-size: 36px;
+  margin: 200px auto 100px auto;
+  font-size: 42px;
   display: inline-block;
   text-align: center;
   font-weight: 600;
@@ -188,28 +223,37 @@ p {
 }
 
 .testimonial-post {
-  width: 48%;
+  width: 44%;
   vertical-align: top;
   display: inline-block;
-  margin: 1%;
+  background-color: white;
+  border: 1px solid $grey-100;
+  box-shadow: $soft-element-shadow;
+  margin: 3%;
   padding: 20px;
   .testimonial-text {
     position: relative;
     .testimonial-author {
       vertical-align: top;
-      position: absolute;
-      right: 0px;
+      margin-left: auto;
       display: inline-block;
       .testimonial-company,
       .testimonial-person {
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 18px;
+        line-height: 24px;
         color: $grey-400;
       }
     }
+    .testimonial-img {
+      img {
+        margin-bottom: 0px;
+        height: 80px;
+        margin-right: 12px;
+      }
+    }
     .testimonial-description {
-      font-size: 20px;
-      margin-bottom: 12px;
+      font-size: 24px;
+      margin-bottom: 32px;
     }
   }
   .testimonial-image {
