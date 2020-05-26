@@ -1,7 +1,7 @@
 ---
 id: Logo
-title: placeholder
-subtext: placeholder
+title: Logo
+subtext: Logo
 image: /assets/logo.png
 ---
-placeholder
+Logo
