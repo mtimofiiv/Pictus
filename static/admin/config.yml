@@ -6,20 +6,38 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: block
+    label: Block
+    folder: src/data/blocks
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
+      - { name: id, label: Id }
       - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { name: subtext, label: Subtext }
+      - { name: body, label: Body, widget: text }
+      - { name: image, label: Image, widget: image }
+  - name: testimonial
+    label: Testimonial
+    folder: src/data/testimonials
+    create: true
+    fields:
+      - { name: company, label: Company }
+      - { name: person, label: Person }
+      - { name: body, label: Body, widget: text }
+      - { name: image, label: Image, widget: image }
   - name: feature
     label: Feature
-    folder: feature
+    folder: src/data/features
     create: true
     fields:
       - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { name: body, label: Body, widget: text }
+      - { name: image, label: Image, widget: image }
+  - name: attribute
+    label: Attribute
+    folder: src/data/attributes
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: text }
       - { name: image, label: Image, widget: image }
