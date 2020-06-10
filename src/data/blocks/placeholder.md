@@ -2,6 +2,6 @@
 id: Logo
 title: Logo
 subtext: Logo
-image: /assets/logo.png
+image: /assets/logo.svg
 ---
 Logo
