@@ -1,5 +1,6 @@
 ---
-title: Invigorate.
-image: /assets/logged-out.png
+title: Compliance
+image: /assets/1efcc0b8-73fe-4396-a4e3-cbeb48a06bd0.png
 ---
-Inspire other creators with your artwork and watch as they pair their complimentary work with yours to create grand masterpieces.
+Use a range of reports and analytic tools to determine the bottlenecks in your recycling programs. We provide a range of methods to ensure that you can make your program as effective as possible.
+
