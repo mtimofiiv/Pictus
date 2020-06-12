@@ -1,5 +1,5 @@
 ---
-title: Community.
-image: /assets/waiting.png
+title: Filing
+image: /assets/d49c4d48-0f95-408b-924b-c7604d5b963d.png
 ---
-While being surrounded by artists with varying levels of skills and experience, there will be room to experiment with different mediums without discrimination.
+Automatically send out e-mails and remind businesses to send in their filing information and pay through their banks website. Keep track of what businesses are filing and paying and when.
