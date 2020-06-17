@@ -12,10 +12,10 @@ collections:
     create: true
     fields:
       - { name: id, label: Id }
-      - { name: title, label: Title }
-      - { name: subtext, label: Subtext }
-      - { name: body, label: Body, widget: text }
-      - { name: image, label: Image, widget: image }
+      - { name: title, label: Title, required: false }
+      - { name: subtext, label: Subtext, required: false }
+      - { name: body, label: Body, widget: text, required: false }
+      - { name: image, label: Image, widget: image, required: false }
   - name: testimonial
     label: Testimonial
     folder: src/data/testimonials

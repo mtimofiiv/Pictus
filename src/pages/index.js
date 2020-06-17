@@ -5,50 +5,54 @@ import Layout from '../templates/layout'
 import Attribute from "../templates/attribute"
 import Testimonial from "../templates/testimonial"
 import Fade from 'react-reveal/Fade';
+import DownArrow from '../templates/down-arrow'
 
 const IndexPage = ({
   data
 }) => {
-  const { features, mainBlock, attributes, testimonials, header } = data
+  const { features, mainBlock, attributes, testimonials, header, footer } = data
 
   const Features = features.edges
     .map((edge, index) => <Feature key={edge.node.frontmatter.title} feature={edge} even={index%2 === 0} />)
   const Attributes = attributes.edges
     .map(edge => <Attribute key={edge.node.frontmatter.title} attribute={edge} />)
   const Testimonials = testimonials.edges
-    .map(edge => <Testimonial key={edge.node.frontmatter.company} testimonial={edge} />)
+    .map((edge, index) => <Testimonial key={edge.node.frontmatter.company} testimonial={edge} />)
 
   return (
-    <Layout header={header}>
+    <Layout header={header} footer={footer}>
       <div className="intro-block">
         <div className="intro-text">
           <h2 className="intro-header">{mainBlock.frontmatter.title}</h2>
-          <div className="intro-subtext">{mainBlock.frontmatter.subtext}</div>
         </div>
-        <div className="small-line"/>
+        <div className="sub-intro">
+          <div className="intro-subtext">
+            {mainBlock.frontmatter.subtext}
+            <div className="action-btn">Request a Demo</div>
+          </div>
+          <img
+            src={mainBlock.frontmatter.image}
+            alt={mainBlock.frontmatter.title}/>
+        </div>
+        <DownArrow/>
       </div>
 
       <h2 className="section-header">
-        Tools for your Whole Process
-        <div className="section-header-underline"/>
+        Tools and features for your whole process.
       </h2>
       <div>{Features}</div>
 
       <h2 className="section-header">
-        What Makes us Different?
-        <div className="section-header-underline"/>
+        What makes us different?
       </h2>
       <Fade>
         <div>{Attributes}</div>
       </Fade>
 
       <h2 className="section-header">
-        Users that Love us
-        <div className="section-header-underline"/>
+        Our customers love us.
       </h2>
-      <Fade>
-        <div>{Testimonials}</div>
-      </Fade>
+      {Testimonials}        
     </Layout>
   )
 }
@@ -106,6 +110,12 @@ export const pageQuery = graphql`
         image
       }
       html
+    },
+    footer: markdownRemark(frontmatter: {id: {eq: "Footer"}}) {
+      frontmatter {
+        id
+        image
+      }
     }
   }
 `

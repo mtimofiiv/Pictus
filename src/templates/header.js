@@ -11,15 +11,14 @@ const Header = ({ logo }) => {
           src={logo.frontmatter.image}
           alt={logo.frontmatter.id}/>
       </div>
+      <div className="flex-spacer"/>
       <div className="navbar-options">
-        <div className="navbar-option">Features</div>
         <div className="navbar-option">Pricing</div>
         <div className="navbar-option">Team</div>
         <div className="navbar-option">Contact</div>
       </div>
-      <div className="flex-spacer"/>
       <div className="navbar-actions">
-        <div className="navbar-action action-btn">Demo</div>
+        <div className="navbar-action action-btn">Request a Demo</div>
       </div>
     </div>
   )

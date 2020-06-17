@@ -4,13 +4,13 @@ import PropTypes from "prop-types"
 import Header from "./header"
 import Footer from "./footer"
 
-const Layout = ({ children, header }) => {
+const Layout = ({ children, header, footer }) => {
   return (
     <>
       <div className="container">
         <Header logo={header}/>
         <main>{children}</main>
-        <Footer logo={header}/>
+        <Footer logo={footer}/>
       </div>
     </>
   )

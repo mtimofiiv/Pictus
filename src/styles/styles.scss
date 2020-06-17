@@ -39,6 +39,7 @@ p {
 }
 
 .action-btn {
+  font-weight: 600;
   background-color: $getsmart-branding-color;
   padding: 8px 16px;
   color: white;
@@ -62,7 +63,7 @@ p {
 .navbar-container {
   display: flex;
   flex-direction: row;
-  padding: 15px 0;
+  padding: 30px 0 15px 0;
   .navbar-logo {
     margin-right: 42px;
   }
@@ -73,8 +74,7 @@ p {
   .navbar-option,
   .navbar-action {
     display: inline-block;
-    font-weight: 600;
-    font-size: 22px;
+    font-size: 20px;
     padding-top: 8px;
   }
   .navbar-option {
@@ -88,25 +88,18 @@ p {
   left: 0px;
   width: 100vw;
   max-width: 100%;
-  background-color: $standard-font-color;
+  background-color: $grey-200;
   padding: 100px 0;
-  .logo-wrapper {
-    background-color: white;
-    align-self: flex-start;
-    padding: 8px 16px;
-    border-radius: 10px;
+  .container {
+    color: $grey-400;
+    background-color: $grey-200;
     img {
+      display: inline-block;
       margin-bottom: 0px;
     }
-  }
-  .container {
-    color: white;
-    background-color: $standard-font-color;
-    display: flex;
-    flex-direction: row;
     .footer-options {
+      vertical-align: top;
       display: inline-block;
-      padding: 0 60px;
       .footer-header {
         margin-bottom: 12px;
         font-weight: 600;
@@ -114,27 +107,60 @@ p {
         line-height: 46px;
       }
       .footer-option {
-        font-size: 22px;
-        line-height: 46px;
+        font-size: 20px;
+        display: inline-block;
+        padding-left: 30px;
+        line-height: 50px;
+      }
+    }
+    .footer-bottom {
+      margin-top: 60px;
+      .footer-line {
+        font-size: 18px;
+        margin-bottom: 12px;
       }
     }
   }
 }
 
 .intro-block {
-  margin: 120px 0 160px 0;
+  position: relative;
+  margin: 80px 0 40px 0;
   .intro-text {
     width: 80%;
     .intro-header {
-      font-size: 72px;
-      line-height: 92px;
+      font-size: 60px;
+      line-height: 72px;
       margin-bottom: 24px;
       font-weight: 600;
     }
+  }
+  .sub-intro {
     .intro-subtext {
-      font-size: 30px;
-      line-height: 48px;
+      vertical-align: top;
+      width: 60%;
+      color: $grey-400;
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 24px;
+      line-height: 40px;
+      padding-right: 60px;
     }
+    img {
+      display: inline-block;
+      width: 40%;
+      max-width: 380px;
+    }
+  }
+  .action-btn {
+    margin-top: 60px;
+    width: 206px;
+  }
+  svg {
+    margin-top: 40px;
+    display: block;
+    width: 80px;
+    margin-left: -20px;
   }
 }
 
@@ -153,6 +179,7 @@ p {
         margin-bottom: 12px;
       }
       .feature-description {
+        color: $grey-400;
         font-size: 24px;
         line-height: 42px;
       }
@@ -211,9 +238,11 @@ p {
 
 .section-header {
   margin: 200px auto 80px auto;
-  font-size: 42px;
+  font-size: 52px;
+  line-height: 60px;
+  width: 80%;
   display: inline-block;
-  text-align: center;
+  text-align: left;
   font-weight: 600;
   .section-header-underline {
     margin-top: 12px;
@@ -222,15 +251,21 @@ p {
   }
 }
 
+.carousel {
+  .carousel__back-button,
+  .carousel__next-button {
+
+  }
+  .carousel__back-button {
+
+  }
+  .carousel__next-button {
+
+  }
+}
+
 .testimonial-post {
-  width: 44%;
   vertical-align: top;
-  display: inline-block;
-  background-color: white;
-  border: 1px solid $grey-100;
-  box-shadow: $soft-element-shadow;
-  margin: 3%;
-  padding: 20px;
   .testimonial-text {
     position: relative;
     .testimonial-author {
