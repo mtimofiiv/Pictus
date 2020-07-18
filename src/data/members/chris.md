@@ -1,5 +1,5 @@
 ---
-title: Chris
-name: Program Controller
+title: Program Controller
+name: Chris
 order: "20"
 ---
