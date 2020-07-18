@@ -11,7 +11,22 @@ const TeamPage = ({
   members.edges.sort(function(a, b) {
     return a.node.frontmatter.order - b.node.frontmatter.order
   })
-  const Members = members.edges
+
+  console.log(members.edges)
+  const development = members.edges.filter(module => module.node.frontmatter.area === 'DEVELOPMENT')
+  const leadership = members.edges.filter(module => module.node.frontmatter.area === 'LEADERSHIP')
+  const comm = members.edges.filter(module => module.node.frontmatter.area === 'COMM')
+  const industry = members.edges.filter(module => module.node.frontmatter.area === 'INDUSTRY')
+
+  console.log(leadership)
+
+  const Leadership = leadership
+  .map((edge) => <Member key={edge.node.frontmatter.title} member={edge} />)
+  const Development = development
+  .map((edge) => <Member key={edge.node.frontmatter.title} member={edge} />)
+  const Comm = comm
+  .map((edge) => <Member key={edge.node.frontmatter.title} member={edge} />)
+  const Industry = industry
   .map((edge) => <Member key={edge.node.frontmatter.title} member={edge} />)
 
   return (
@@ -25,7 +40,25 @@ const TeamPage = ({
         </div>
       </div>
 
-      <div>{Members}</div>
+      <h2 className="section-header--tiny">
+        Our Leadership
+      </h2>
+      <div>{Leadership}</div>
+
+      <h2 className="section-header--tiny">
+        Our Development Team
+      </h2>
+      <div>{Development}</div>
+
+      <h2 className="section-header--tiny">
+        Our Communications Team
+      </h2>
+      <div>{Comm}</div>
+
+      <h2 className="section-header--tiny">
+        Our Industry Experts
+      </h2>
+      <div>{Industry}</div>
     </Layout>
   )
 }
@@ -43,6 +76,7 @@ export const pageQuery = graphql`
             image
             name
             order
+            area
           }
         }
       }

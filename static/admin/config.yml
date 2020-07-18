@@ -25,6 +25,7 @@ collections:
       - { name: person, label: Person }
       - { name: body, label: Body, widget: text }
       - { name: image, label: Image, widget: image }
+      - { name: order, label: Order }
   - name: feature
     label: Feature
     folder: src/data/features
@@ -33,6 +34,7 @@ collections:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: text }
       - { name: image, label: Image, widget: image }
+      - { name: order, label: Order }
   - name: attribute
     label: Attribute
     folder: src/data/attributes
@@ -41,3 +43,25 @@ collections:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: text }
       - { name: image, label: Image, widget: image }
+      - { name: order, label: Order }
+  - name: module
+    label: Module
+    folder: src/data/modules
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: requirement, label: Requirement, widget: text, required: false }
+      - { name: body, label: Body, widget: text }
+      - { name: image, label: Image, widget: image, required: false }
+      - { name: order, label: Order }
+      - { name: addOn, label: Add On, widget: boolean, default: false }
+  - name: member
+    label: Member
+    folder: src/data/members
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: name, label: Name }
+      - { name: image, label: Image, widget: image, required: false }
+      - { name: order, label: Order }
+      - { name: area, label: Area - DEVELOPMENT - INDUSTRY - COMM - LEADERSHIP }
