@@ -1,5 +1,6 @@
 ---
 title: Product Development Lead
 name: Joe
-order: "50 "
+order: "10"
+category: Development
 ---
