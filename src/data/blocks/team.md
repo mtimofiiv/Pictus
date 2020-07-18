@@ -1,6 +1,6 @@
 ---
 id: TeamBlock
 title: Team
-subtext: Our team had decades of experience in the industry and blends together
-  well with our innovative development team.
+subtext: We have a diverse team that brings skills and insights from all areas
+  of the industries we work in together
 ---
