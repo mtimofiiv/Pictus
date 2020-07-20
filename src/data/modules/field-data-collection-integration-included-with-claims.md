@@ -1,5 +1,6 @@
 ---
 title: Field Data Collection Integration (Included with Claims)
+requirement: Claims
 order: "60"
 addOn: false
 ---
