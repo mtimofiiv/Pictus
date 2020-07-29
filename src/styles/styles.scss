@@ -174,12 +174,12 @@ a {
 
 .secondary-intro-block {
   max-width: 80%;
-  margin: 60px 0px 120px 0px;
+  margin: 80px 0px 160px 0px;
   .secondary-intro-text {
     text-align: left;
     .secondary-intro-header {
       font-weight: 600;
-      font-size: 48px;
+      font-size: 54px;
       line-height: 72px;
     }
     .secondary-intro-subtext {
@@ -228,10 +228,10 @@ a {
 .attribute-post {
   border: 1px solid $grey-200;
   background-color: white;
-  width: 22%;
+  width: 23%;
   vertical-align: top;
   display: inline-block;
-  margin: 0 2%;
+  margin: 0 1%;
   padding: 20px;
   box-shadow: $soft-element-shadow;
   border-radius: 12px;
@@ -281,49 +281,49 @@ a {
     font-size: 42px;
   }
   &--tiny {
-    margin: 60px auto 20px auto;
+    margin: 90px auto 20px auto;
     font-size: 32px;
-  }
-}
-
-.carousel {
-  .carousel__back-button,
-  .carousel__next-button {
-
-  }
-  .carousel__back-button {
-
-  }
-  .carousel__next-button {
-
   }
 }
 
 .testimonial-post {
   vertical-align: top;
+  background-color: white;
+  padding: 32px;
+  border-radius: 8px;
+  width: 48%;
+  margin: 2% 1%;
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.1);
+  display: inline-block;
   .testimonial-text {
     position: relative;
     .testimonial-author {
-      vertical-align: top;
-      margin-left: auto;
+      vertical-align: middle;
+      margin-left: 8px;
       display: inline-block;
       .testimonial-company,
       .testimonial-person {
         font-size: 18px;
         line-height: 24px;
         color: $grey-400;
+        font-weight: 600;
+      }
+      .testimonial-person {
+        color: $standard-font-color;
       }
     }
     .testimonial-img {
+      display: flex;
       img {
-        margin-bottom: 0px;
-        height: 60px;
+        margin: auto;
+        width: 80px;
         margin-right: 12px;
       }
     }
     .testimonial-description {
-      font-size: 24px;
-      margin-bottom: 32px;
+      color: $grey-400;
+      margin-top: 24px;
+      font-size: 20px;
     }
   }
   .testimonial-image {
@@ -343,11 +343,11 @@ a {
     display: inline-block;
     vertical-align: middle;
     margin-bottom: 28px;
-    line-height: 42px;
+    line-height: 36px;
   }
   .module-title {
     margin-top: 0px;
-    font-size: 42px;
+    font-size: 36px;
     margin-right: 22px;
   }
   img {
@@ -374,6 +374,16 @@ a {
   }
 }
 
+.team-intro {
+  max-width: 900px;
+  color: $grey-400;
+  line-height: 36px;
+  font-size: 20px;
+  margin-bottom: 24px;
+  p {
+    margin-bottom: 18px;
+  }
+}
 .member-container {
   width: 23%;
   margin: 24px 1%;

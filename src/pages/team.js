@@ -6,7 +6,9 @@ import Member from "../templates/member"
 const TeamPage = ({
   data
 }) => {
-  const { header, footer, teamBlock, members } = data
+  const { 
+    header, footer, teamBlock, members, leadershipIntro, developmentIntro, communicationIntro, industryIntro 
+  } = data
 
   members.edges.sort(function(a, b) {
     return a.node.frontmatter.order - b.node.frontmatter.order
@@ -40,21 +42,37 @@ const TeamPage = ({
       <h2 className="section-header--tiny">
         Our Leadership
       </h2>
+      <div className="team-intro"
+        dangerouslySetInnerHTML={{
+        __html: leadershipIntro.html
+      }}/>
       <div>{Leadership}</div>
 
       <h2 className="section-header--tiny">
         Our Development Team
       </h2>
+      <div className="team-intro"
+        dangerouslySetInnerHTML={{
+        __html: developmentIntro.html
+      }}/>
       <div>{Development}</div>
 
       <h2 className="section-header--tiny">
         Our Communications Team
       </h2>
+      <div className="team-intro"
+        dangerouslySetInnerHTML={{
+        __html: communicationIntro.html
+      }}/>
       <div>{Comm}</div>
 
       <h2 className="section-header--tiny">
         Our Industry Experts
       </h2>
+      <div className="team-intro"
+        dangerouslySetInnerHTML={{
+        __html: industryIntro.html
+      }}/>
       <div>{Industry}</div>
     </Layout>
   )
@@ -85,6 +103,18 @@ export const pageQuery = graphql`
         subtext
         title
       }
+    },
+    leadershipIntro: markdownRemark(frontmatter: {id: {eq: "LeadershipIntro"}}) {
+      html
+    },
+    developmentIntro: markdownRemark(frontmatter: {id: {eq: "DevelopmentIntro"}}) {
+      html
+    },
+    communicationIntro: markdownRemark(frontmatter: {id: {eq: "CommunicationIntro"}}) {
+      html
+    },
+    industryIntro: markdownRemark(frontmatter: {id: {eq: "IndustryIntro"}}) {
+      html
     },
     header: markdownRemark(frontmatter: {id: {eq: "Logo"}}) {
       frontmatter {
