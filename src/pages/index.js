@@ -4,8 +4,9 @@ import Feature from "../templates/feature"
 import Layout from '../templates/layout'
 import Attribute from "../templates/attribute"
 import Testimonial from "../templates/testimonial"
-import Fade from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade'
 import DownArrow from '../templates/down-arrow'
+import SEO from '../templates/seo'
 
 const IndexPage = ({
   data
@@ -21,6 +22,13 @@ const IndexPage = ({
 
   return (
     <Layout header={header} footer={footer}>
+      <SEO
+        title="Empower your recycling stewardship"
+        canonical="/"
+        description="PICTUS empowers recycling stewardships and PROs to manage, monitor, and improve their recycling and incentive programs. Configure your application today and see the results tomorrow."
+        keywords="recycling, claims, filing, compliance, PRO, recycle, mapping"
+      />
+
       <div className="intro-block">
         <div className="intro-text">
           <h2 className="intro-header">{mainBlock.frontmatter.title}</h2>

@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from '../templates/layout'
+import SEO from '../templates/seo'
 
 const ContactPage = ({
   data
@@ -9,6 +10,13 @@ const ContactPage = ({
 
   return (
     <Layout header={header} footer={footer}>
+      <SEO
+        title="Contact"
+        canonical="/"
+        description="Contact the PICTUS team or book a demo by filling out the form below."
+        keywords="recycling, contact, recycle, demo, PICTUS"
+      />
+
       <div className="secondary-intro-block">
         <div className="secondary-intro-text">
           <h2 className="secondary-intro-header">{contactBlock.frontmatter.title}</h2>

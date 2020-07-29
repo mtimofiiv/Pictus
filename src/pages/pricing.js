@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from '../templates/layout'
 import Module from "../templates/module"
+import SEO from '../templates/seo'
 
 const PricingPage = ({
   data
@@ -20,6 +21,13 @@ const PricingPage = ({
 
   return (
     <Layout header={header} footer={footer}>
+      <SEO
+        title="Pricing"
+        canonical="/"
+        description="PICTUS can be priced differently depending on your needs. Select what modules you need and pay and upgrade as you go."
+        keywords="recycling, claims, filing, compliance, PRO, recycle, communications, pricing"
+      />
+
       <div className="secondary-intro-block">
         <div className="secondary-intro-text">
           <h2 className="secondary-intro-header">{pricingBlock.frontmatter.title}</h2>

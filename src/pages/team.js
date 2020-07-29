@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from '../templates/layout'
 import Member from "../templates/member"
+import SEO from '../templates/seo'
 
 const TeamPage = ({
   data
@@ -30,6 +31,13 @@ const TeamPage = ({
 
   return (
     <Layout header={header} footer={footer}>
+      <SEO
+        title="Team"
+        canonical="/"
+        description="Say hello to the PICTUS team. We bring years of industry experience and a young innovative development team together to deliver our solution."
+        keywords="recycling, leadership, development, support, recycle, team"
+      />
+
       <div className="secondary-intro-block">
         <div className="secondary-intro-text">
           <h2 className="secondary-intro-header">{teamBlock.frontmatter.title}</h2>

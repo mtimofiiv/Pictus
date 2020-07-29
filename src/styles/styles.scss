@@ -179,12 +179,12 @@ a {
     text-align: left;
     .secondary-intro-header {
       font-weight: 600;
-      font-size: 54px;
+      font-size: 60px;
       line-height: 72px;
     }
     .secondary-intro-subtext {
       color: $grey-400;
-      font-size: 26px;
+      font-size: 30px;
       line-height: 48px;
       padding-right: 100px;
     }
@@ -377,8 +377,8 @@ a {
 .team-intro {
   max-width: 900px;
   color: $grey-400;
-  line-height: 36px;
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 42px;
   margin-bottom: 24px;
   p {
     margin-bottom: 18px;
@@ -386,6 +386,7 @@ a {
 }
 .member-container {
   width: 23%;
+  max-width: 280px;
   margin: 24px 1%;
   display: inline-block;
   padding: 20px;
@@ -409,6 +410,177 @@ a {
       margin-bottom: 0px;
       img {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .intro-block {
+    margin: 60px 0 20px 0;
+    .intro-text {
+      width: 100%;
+      .intro-header {
+        font-size: 36px;
+        line-height: 46px;
+        margin-bottom: 24px;
+      }
+    }
+    .sub-intro {
+      .intro-subtext {
+        width: 100%;
+        margin-top: 0px;
+        font-size: 22px;
+        padding-right: 0px;
+      }
+      img {
+        display: none;
+      }
+    }
+    .action-btn {
+      margin-top: 40px;
+    }
+  }
+
+  .section-header {
+    margin: 90px auto 40px auto;
+    font-size: 42px;
+    line-height: 60px;
+    width: 100%;
+  }
+
+  .secondary-intro-block {
+    max-width: 100%;
+    margin: 60px 0px 120px 0px;
+    .secondary-intro-text {
+      .secondary-intro-header {
+        font-size: 46px;
+        line-height: 72px;
+      }
+      .secondary-intro-subtext {
+        padding-right: 0px;
+        font-size: 26px;
+        line-height: 48px;
+      }
+    }
+  }
+
+  .feature-container {
+    .feature-post {
+      margin: 60px 15px 90px 15px;
+      .feature-text {
+        margin-top: 0px;
+        width: 100%;
+        padding: 0px;
+        .feature-title {
+          font-size: 36px;
+          font-weight: 600;
+          margin-bottom: 12px;
+        }
+        .feature-description {
+          font-size: 22px;
+          line-height: 36px;
+          margin-bottom: 24px;
+        }
+      }
+      .feature-image {
+        width: 60%;
+        margin: auto;
+        padding: 0px;
+        display: block;
+        img {
+          margin-bottom: 0px;
+        }
+      }
+      &:first-of-type {
+        margin: 60px 15px 90px 15px;
+      }
+    }
+  }
+
+  .attribute-post {
+    width: 96%;
+    margin: 2%;
+    padding: 20px;
+    .attribute-text {
+      .attribute-title {
+        font-size: 24px;
+        margin-bottom: 6px;
+      }
+      .attribute-description {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+    &:first-of-type {
+      margin: 2%;
+    }
+    &:last-of-type {
+      margin: 2%;
+    }
+  }
+
+  .testimonial-post {
+    width: 96%;
+    margin: 2% 1%;
+  }
+
+  .module-text {
+    margin-top: 80px;
+    .module-title,
+    img,
+    .module-title--property {
+      margin-bottom: 16px;
+      line-height: 28px;
+    }
+    .module-title {
+      margin-top: 0px;
+      font-size: 28px;
+      margin-right: 22px;
+    }
+    img {
+      height: 28px;
+      width: 28px;
+    }
+    .module-title--property {
+      display: block;
+      font-size: 18px;
+    }
+    .module-description {
+      font-size: 22px;
+      line-height: 34px;
+    }
+    &.indented {
+      margin-left: 30px;
+    }
+  }
+
+  .team-intro {
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .member-container {
+    width: 96%;
+    margin: 24px auto;
+    padding: 20px;
+    display: block;
+  }
+
+  .footer-container {
+    margin-top: 120px;
+    padding: 75px 0;
+    .container {
+      img {
+        display: inline-block;
+        margin-bottom: 0px;
+      }
+      .footer-options {
+        display: block;
+        margin-top: 20px;
+        .footer-option {
+          padding-right: 30px;
+          padding-left: 0px;
+        }
       }
     }
   }
