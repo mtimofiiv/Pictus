@@ -1,7 +1,7 @@
 ---
 title: Field Data Collection Integration
 requirement: true
-property: Included with claims
+property: Included for free, with claims
 image: /assets/location-01.png
 order: "60"
 addOn: false
