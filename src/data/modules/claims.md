@@ -1,5 +1,8 @@
 ---
 title: Claims
+requirement: false
+property: Cost varies greatly
+image: /assets/expense-01.png
 order: "50"
 addOn: false
 ---
