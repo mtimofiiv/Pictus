@@ -1,5 +1,7 @@
 ---
 title: Business Insights
+requirement: false
+image: /assets/reports-01.png
 order: "20"
 addOn: true
 ---
