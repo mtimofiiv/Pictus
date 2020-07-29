@@ -1,7 +1,7 @@
 ---
 title: Registration
 requirement: false
-property: This package is needed for everything
+property: This package is required
 image: /assets/contact-user-01.png
 order: "0"
 addOn: false
