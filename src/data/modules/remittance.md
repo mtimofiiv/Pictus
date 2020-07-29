@@ -1,7 +1,10 @@
 ---
 title: Remittance
-requirement: Filing
+requirement: true
+property: Cannot be purchased without filing
+image: /assets/recurring-bills-01.png
 order: "30"
+addOn: false
 ---
 The Remittance module allows members to see the full life cycle of invoices, through to a fully paid invoice.
 
