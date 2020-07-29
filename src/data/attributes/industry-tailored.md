@@ -1,5 +1,6 @@
 ---
 title: Industry Tailored
-image: /assets/checkup.png
+image: /assets/recurring-bills-01.png
+order: "20"
 ---
 Tailor-made for organizations requiring regular member filings and incentives driven by claims.
