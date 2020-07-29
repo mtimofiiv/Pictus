@@ -16,9 +16,9 @@ const Header = ({ logo }) => {
       </Link>
       <div className="flex-spacer"/>
       <div className="navbar-options">
-        <Link className="navbar-option" to="pricing/">Pricing</Link>
-        <Link className="navbar-option" to="team/">Team</Link>
-        <Link className="navbar-option" to="contact/">Contact</Link>
+        <Link className="navbar-option" to="/pricing">Pricing</Link>
+        <Link className="navbar-option" to="/team">Team</Link>
+        <Link className="navbar-option" to="/contact">Contact</Link>
       </div>
       <div className="navbar-actions">
         <div className="navbar-action action-btn">Request a Demo</div>

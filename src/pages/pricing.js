@@ -31,7 +31,7 @@ const PricingPage = ({
 
       <div>{Modules}</div>
 
-      <h2 className="section-header--small">
+      <h2 className="section-header">
         Add these to any of our other modules!
       </h2>
       <div>{AddOns}</div>
@@ -52,6 +52,8 @@ export const pageQuery = graphql`
             order
             requirement
             addOn
+            property
+            image
           }
         }
       }

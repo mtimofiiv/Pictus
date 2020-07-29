@@ -12,22 +12,19 @@ const TeamPage = ({
     return a.node.frontmatter.order - b.node.frontmatter.order
   })
 
-  console.log(members.edges)
   const development = members.edges.filter(module => module.node.frontmatter.area === 'DEVELOPMENT')
   const leadership = members.edges.filter(module => module.node.frontmatter.area === 'LEADERSHIP')
   const comm = members.edges.filter(module => module.node.frontmatter.area === 'COMM')
   const industry = members.edges.filter(module => module.node.frontmatter.area === 'INDUSTRY')
 
-  console.log(leadership)
-
   const Leadership = leadership
-  .map((edge) => <Member key={edge.node.frontmatter.title} member={edge} />)
+  .map((edge) => <Member key={`${edge.node.frontmatter.name}-${edge.node.frontmatter.title}`} member={edge} />)
   const Development = development
-  .map((edge) => <Member key={edge.node.frontmatter.title} member={edge} />)
+  .map((edge) => <Member key={`${edge.node.frontmatter.name}-${edge.node.frontmatter.title}`} member={edge} />)
   const Comm = comm
-  .map((edge) => <Member key={edge.node.frontmatter.title} member={edge} />)
+  .map((edge) => <Member key={`${edge.node.frontmatter.name}-${edge.node.frontmatter.title}`} member={edge} />)
   const Industry = industry
-  .map((edge) => <Member key={edge.node.frontmatter.title} member={edge} />)
+  .map((edge) => <Member key={`${edge.node.frontmatter.name}-${edge.node.frontmatter.title}`} member={edge} />)
 
   return (
     <Layout header={header} footer={footer}>

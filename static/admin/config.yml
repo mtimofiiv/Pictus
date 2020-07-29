@@ -50,7 +50,8 @@ collections:
     create: true
     fields:
       - { name: title, label: Title }
-      - { name: requirement, label: Requirement, widget: text, required: false }
+      - { name: requirement, label: Requirement, widget: boolean, default: false }
+      - { name: property, label: Property, widget: text, required: false }
       - { name: body, label: Body, widget: text }
       - { name: image, label: Image, widget: image, required: false }
       - { name: order, label: Order }
