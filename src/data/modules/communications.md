@@ -1,6 +1,8 @@
 ---
-title: Communications (Included with Registration)
-requirement: Registration
+title: Communications
+requirement: true
+property: Included with registration
+image: /assets/email-01.png
 order: "10"
 addOn: false
 ---
