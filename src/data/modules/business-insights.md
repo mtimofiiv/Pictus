@@ -1,6 +1,7 @@
 ---
 title: Business Insights
 requirement: false
+property: $500 - $1000 / Module
 image: /assets/reports-01.png
 order: "20"
 addOn: true
