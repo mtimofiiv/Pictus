@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Menu from '../images/hamburger'
 
 const Header = ({ logo }) => {
 
@@ -23,6 +24,9 @@ const Header = ({ logo }) => {
       <div className="navbar-actions">
         <div className="navbar-action action-btn">Request a Demo</div>
       </div>
+      <Link className="header-right-burger" to="/menu" title="navigation">
+        <Menu/>
+      </Link>
     </div>
   )
 }
