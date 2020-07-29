@@ -1,6 +1,8 @@
 ---
-title: Field Data Collection Integration (Included with Claims)
-requirement: Claims
+title: Field Data Collection Integration
+requirement: true
+property: Included with claims
+image: /assets/location-01.png
 order: "60"
 addOn: false
 ---
