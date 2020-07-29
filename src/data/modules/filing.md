@@ -1,6 +1,9 @@
 ---
 title: Filing
+requirement: false
+image: /assets/bank-01.png
 order: "20"
+addOn: false
 ---
 The Filing module allows members to file information in a simple, intuitive way, similar to an online store. The filing is typically linked to the collection of agency fees based on the sale of a product.
 
