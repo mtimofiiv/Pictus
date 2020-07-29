@@ -1,5 +1,8 @@
 ---
 title: Compliance
+requirement: false
+property: $500 - $1000 / Module
+image: /assets/accountant-01.png
 order: "10"
 addOn: true
 ---
