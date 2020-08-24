@@ -7,6 +7,7 @@ import Testimonial from "../templates/testimonial"
 import Fade from 'react-reveal/Fade'
 import DownArrow from '../templates/down-arrow'
 import SEO from '../templates/seo'
+import { Link } from "gatsby"
 
 const IndexPage = ({
   data
@@ -36,7 +37,9 @@ const IndexPage = ({
         <div className="sub-intro">
           <div className="intro-subtext">
             {mainBlock.frontmatter.subtext}
-            <div className="action-btn">Request a Demo</div>
+            <Link to="/contact">
+              <div className="action-btn">Request a Demo</div>
+            </Link>
           </div>
           <img
             src={mainBlock.frontmatter.image}

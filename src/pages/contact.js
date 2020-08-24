@@ -25,6 +25,28 @@ const ContactPage = ({
           </div>
         </div>
       </div>
+
+      <form method="post" action="https://formspree.io/joe.czepil@getsmartsolutions.ca">
+        <input type="hidden" name="bot-field" />
+        <label>
+          Name
+          <input type="text" name="name" id="name" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="_replyto" id="email" />
+        </label>
+        <label>
+          Subject
+          <input type="text" name="subject" id="subject" />
+        </label>
+        <label>
+          Message
+          <textarea name="message" id="message" rows="5" />
+        </label>
+        <button type="submit" className="action-btn">Send</button>
+      </form>
+
     </Layout>
   )
 }

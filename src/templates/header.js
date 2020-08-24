@@ -22,7 +22,9 @@ const Header = ({ logo }) => {
         <Link className="navbar-option" to="/contact">Contact</Link>
       </div>
       <div className="navbar-actions">
-        <div className="navbar-action action-btn">Request a Demo</div>
+        <Link className="navbar-option" to="/contact">
+          <div className="navbar-action action-btn">Request a Demo</div>
+        </Link>
       </div>
       <Link className="header-right-burger" to="/menu" title="navigation">
         <Menu/>

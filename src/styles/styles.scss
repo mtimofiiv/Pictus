@@ -68,6 +68,40 @@ a {
   margin: auto;
 }
 
+form {
+  margin: auto;
+  max-width: 600px;
+  label,
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+  }
+  label {
+    font-weight: 600;
+    color: black;
+  }
+  input,
+  textarea {
+    margin-bottom: 12px;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #CED4DA;
+    color: black;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    max-width: 100%;
+    min-width: 100%;
+    &:focus {
+      box-shadow: none;
+      outline: none;
+      border: 1px solid $getsmart-branding-color;
+    }
+  }
+  button {
+    float: right;
+  }
+}
+
 .navbar-container {
   display: flex;
   flex-direction: row;
