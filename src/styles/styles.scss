@@ -121,6 +121,10 @@ form {
   }
   .navbar-option {
     margin-right: 42px;
+    &.navbar-button {
+      padding-top: 0px;
+      margin-top: -2px;
+    }
   }
 }
 
