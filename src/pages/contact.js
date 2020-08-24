@@ -26,7 +26,7 @@ const ContactPage = ({
         </div>
       </div>
 
-      <form method="post" action="https://formspree.io/joe.czepil@getsmartsolutions.ca">
+      <form method="post" action="https://formspree.io/mnqgyyqr">
         <input type="hidden" name="bot-field" />
         <label>
           Name
@@ -44,7 +44,7 @@ const ContactPage = ({
           Message
           <textarea name="message" id="message" rows="5" />
         </label>
-        <button type="submit" className="action-btn">Send</button>
+        <button type="submit" className="action-btn" name="Send">Send</button>
       </form>
 
     </Layout>
