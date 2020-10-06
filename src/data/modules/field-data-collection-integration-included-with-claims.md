@@ -1,7 +1,7 @@
 ---
 title: Collections
 requirement: true
-property: ""
+property: In development
 image: /assets/location-01.png
 order: "60"
 addOn: false
