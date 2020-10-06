@@ -1,7 +1,7 @@
 ---
 title: Remittance
 requirement: true
-property: Cannot be purchased without filing
+property: Add-on to filing
 image: /assets/recurring-bills-01.png
 order: "30"
 addOn: false
