@@ -2,8 +2,8 @@
 id: MainBlock
 title: Making it easier than ever for recycling stewardships.
 subtext: PICTUS empowers recycling stewardships and producer responsibility
-  organizations (PROs) to manage, monitor, and improve their recycling and
-  incentive programs.
+  organizations (PROs) to manage, monitor, and improve recycling and incentive
+  programs.
 image: /assets/augmented-reality.png
 ---
 ✓ PICTUS is proven with thousands of users in production
