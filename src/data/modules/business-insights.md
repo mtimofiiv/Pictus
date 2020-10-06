@@ -1,7 +1,7 @@
 ---
 title: Insights
 requirement: false
-property: $500 - $1000 / Module
+property: Base and extended versions available.
 image: /assets/reports-01.png
 order: "20"
 addOn: true
