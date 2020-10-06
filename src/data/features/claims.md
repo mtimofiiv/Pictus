@@ -1,7 +1,7 @@
 ---
 title: Claims
 image: /assets/exchange.png
-order: "10"
+order: "20"
 ---
 Give claimants an online portal to login, maintain their information, and apply for their recycling incentives and assets to help their program. Monitor, review, and approve claims as they flow through a pipeline to ensure integrity and correctness.
 
