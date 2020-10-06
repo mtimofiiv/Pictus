@@ -1,7 +1,7 @@
 ---
 title: Communications
 requirement: true
-property: Included for free, with registration
+property: Included for free with registration
 image: /assets/email-01.png
 order: "10"
 addOn: false
