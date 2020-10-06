@@ -1,5 +1,5 @@
 ---
-title: Mapping & Coverage
+title: Mapping and Coverage
 image: /assets/delivery.png
 order: "50"
 ---
