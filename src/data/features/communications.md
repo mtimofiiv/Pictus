@@ -1,5 +1,5 @@
 ---
-title: Simple communications
+title: Effective communications
 image: /assets/programming.png
 order: "30"
 ---
