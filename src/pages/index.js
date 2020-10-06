@@ -14,6 +14,10 @@ const IndexPage = ({
 }) => {
   const { features, mainBlock, attributes, testimonials, header, footer } = data
 
+  features.edges.sort(function(a, b) {
+    return a.node.frontmatter.order - b.node.frontmatter.order
+  })
+
   const Features = features.edges
     .map((edge, index) => <Feature key={edge.node.frontmatter.title} feature={edge} even={index%2 === 0} />)
   const Attributes = attributes.edges
@@ -79,6 +83,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             image
+            order
           }
         }
       }
