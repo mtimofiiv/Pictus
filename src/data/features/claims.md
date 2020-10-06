@@ -1,5 +1,5 @@
 ---
-title: Claims
+title: Self-service claims
 image: /assets/exchange.png
 order: "20"
 ---
