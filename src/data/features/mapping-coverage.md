@@ -1,6 +1,8 @@
 ---
-title: Mapping and Coverage
+title: Connect to other systems
 image: /assets/delivery.png
 order: "50"
 ---
-Map the businesses and their coverage in your program to pin point the most effective ways to improve your recycling incentive programs.
+PICTUS can integrate with common financial systems to integrate accounts receivable and accounts payable. Or run standalone and produce reports to update financial systems. It's your choice.
+
+PICTUS can also speak to field data collection systems, respecting that large collectors already have dispatch system and electronic data capture.
