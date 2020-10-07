@@ -1,5 +1,5 @@
 ---
-title: Connect to other systems
+title: Integrate with other systems
 image: /assets/delivery.png
 order: "50"
 ---
