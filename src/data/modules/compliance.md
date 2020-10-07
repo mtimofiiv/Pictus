@@ -1,7 +1,7 @@
 ---
 title: Compliance
 requirement: false
-property: Base and extended versions available
+property: Planned base and extended versions (leveraging Insights)
 image: /assets/accountant-01.png
 order: "70"
 addOn: true
