@@ -1,5 +1,5 @@
 ---
-company: Tire StewardShip BC
+company: Tire Stewardship BC
 person: Rosemary Sutton, Executive Director
 image: /assets/tsbc.jpg
 order: "10"
