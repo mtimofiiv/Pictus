@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: GetSmartSolutions/Pictus
+  repo: mtimofiiv/Pictus
 
 media_folder: static/assets
 public_folder: /assets
